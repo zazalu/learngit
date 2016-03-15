@@ -4,7 +4,7 @@
 
 using namespace std;
 
-static void merge(int* S,int left, int mid, int right)
+void merge(int* S,int left, int mid, int right)
 {
 	int n1 = mid - left + 1;
 	int n2 = right - mid;
@@ -37,7 +37,7 @@ static void merge(int* S,int left, int mid, int right)
 	}
 }
 
-static void merge_sort(int* S, int left, int right)
+void merge_sort(int* S, int left, int right)
 {
 	int mid;
 	if ((left >= 0) && (left < right)){
@@ -49,7 +49,7 @@ static void merge_sort(int* S, int left, int right)
 	}
 }
 
-static int binary_search(int* S, int len, int expect, int target)
+int binary_search(int* S, int len, int expect, int target)
 {
 	int left = 0, right = len - 1, mid;
 	do {
@@ -75,7 +75,7 @@ static int binary_search(int* S, int len, int expect, int target)
 	return 1;
 }
 
-static int check_exist_x(int* S,int len, int x)
+int check_exist_x(int* S,int len, int x)
 {
 	int i;
 
