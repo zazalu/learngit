@@ -1,2 +1,3 @@
 zazalu fight!^.^
-hello world
+hello world!
+hello *2
